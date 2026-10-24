@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- main band with a wavy bottom edge (transparent below, so it blends into the page) -->
+  <path fill="url(#bg)" d="M0 0 H1200 V196 C1050 236 900 166 750 196 C600 226 450 166 300 196 C180 220 80 200 0 210 Z">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+      values="M0 0 H1200 V196 C1050 236 900 166 750 196 C600 226 450 166 300 196 C180 220 80 200 0 210 Z;
+              M0 0 H1200 V206 C1050 176 900 226 750 200 C600 176 450 226 300 200 C180 182 80 204 0 196 Z;
+              M0 0 H1200 V196 C1050 236 900 166 750 196 C600 226 450 166 300 196 C180 220 80 200 0 210 Z"/>
+  </path>
+
+  <!-- accent wave -->
+  <path fill="url(#wave2)" d="M0 186 C150 216 300 160 450 186 C600 212 750 160 900 186 C1020 206 1110 196 1200 180 V200 C1050 236 900 166 750 196 C600 226 450 166 300 196 C180 220 80 200 0 210 Z">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- soft glow behind the name -->
+  <ellipse cx="600" cy="100" rx="420" ry="110" fill="url(#glow)"/>
+
+  <!-- subtle dot grid -->
+  <g fill="#ffffff" opacity="0.08">
+    <circle cx="90" cy="40" r="2"/><circle cx="130" cy="70" r="1.5"/><circle cx="60" cy="110" r="1.5"/>
+    <circle cx="1110" cy="50" r="2"/><circle cx="1070" cy="90" r="1.5"/><circle cx="1140" cy="125" r="1.5"/>
+    <circle cx="220" cy="30" r="1.5"/><circle cx="980" cy="28" r="1.5"/>
+  </g>
+
+  <g font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="108" font-size="60" font-weight="700" fill="#ffffff" letter-spacing="1" opacity="0">
+      Ankit Pandey
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
+    </text>
+    <text x="600" y="150" font-size="20" font-weight="500" fill="#c4b5fd" letter-spacing="2" opacity="0">
+      DATA ANALYST  ·  MACHINE LEARNING  ·  GENAI
+      <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="1.2s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
