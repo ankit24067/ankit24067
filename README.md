@@ -1,6 +1,6 @@
 <!-- ───────────────────────── HEADER ───────────────────────── -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Ankit%20Pandey&fontSize=56&fontColor=ffffff&fontAlignY=36&desc=Data%20Analyst%20%C2%B7%20Machine%20Learning%20%26%20GenAI&descAlignY=58&descSize=18&animation=fadeIn" width="100%" alt="Ankit Pandey"/>
+  <img src="./assets/header.svg" width="100%" alt="Ankit Pandey"/>
 </p>
 
 <p align="center">
