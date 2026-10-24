@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#24243e"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#0f0c29"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#acc)" d="M0 30 C150 4 300 52 450 28 C600 4 750 52 900 28 C1020 10 1110 22 1200 34 V120 H0 Z">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path fill="url(#bg)" d="M0 42 C150 14 300 64 450 40 C600 16 750 64 900 40 C1020 22 1110 34 1200 46 V120 H0 Z">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite"
+      values="M0 42 C150 14 300 64 450 40 C600 16 750 64 900 40 C1020 22 1110 34 1200 46 V120 H0 Z;
+              M0 36 C150 60 300 18 450 42 C600 64 750 18 900 42 C1020 58 1110 44 1200 36 V120 H0 Z;
+              M0 42 C150 14 300 64 450 40 C600 16 750 64 900 40 C1020 22 1110 34 1200 46 V120 H0 Z"/>
+  </path>
+  <text x="600" y="94" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="15" letter-spacing="3" fill="#c4b5fd" opacity="0.85">THANKS FOR VISITING</text>
+</svg>
